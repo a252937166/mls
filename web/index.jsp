@@ -49,6 +49,7 @@
             /*border-width: thin;*/
         }
 
+        /***首页导航 1 单项***/
         #tp1 div {
             height: 22px;
             line-height: 22px;
@@ -57,6 +58,7 @@
             padding-right: 18px;
         }
 
+        /***首页导航 1 超链***/
         #tp1 a {
             color: gray;
             font-size: 12px;
@@ -79,6 +81,7 @@
             margin-bottom:0px;
         }
 
+        /*首页导航3 单项*/
         .tp3_link_1{
             font-weight: bold;
             float: left;
@@ -86,7 +89,7 @@
             margin-right:12px;
             text-align:center;
         }
-
+        /*首页导航3 单项*/
         .tp3_link_2{
             font-weight: bold;
             color: #ff6699;;
@@ -95,7 +98,7 @@
             margin-right:12px;
             text-align:center;
         }
-
+        /*首页导航3 更多*/
         #the_more{
             position: absolute;
             z-index: 9;
@@ -104,6 +107,7 @@
             width:100px;
         }
 
+        /*首页导航3 更多 下拉菜单*/
         #the_more div{
             line-height:30px;
             text-align: center;
@@ -137,20 +141,14 @@
 
         }
 
-        /*更多菜单*/
-        .the_more_scroll {
-            background-color: black;
-            position: fixed;
-            top: 43px;
-            z-index: 9;
-        }
-
         /*底部*/
         #footer {
             height: 260px;
             background-color: #dddddd
         }
 
+
+        /*右侧下方 主题*/
         #body_dv1_bottm {
             height: 28%;
             width: 80%;
@@ -180,63 +178,64 @@
         #body_dv9 img {
             height: 340px;
         }
-
+        /**右侧下方 主题 单项**/
         .body_dv1_bottom_item {
             width: 18%;
             margin-left: 2%;
             height: 97.5%
         }
 
+        /**每日新款发售 单项**/
         .body_dv2_item {
             width: 32%;
             height: 350px;
             margin-right: 2%
         }
-
+        /*正在流行*/
         .body_dv3_item {
             width: 15%;
             height: 227px;
             margin-right: 2%
         }
-
+        /*新品精选*/
         .body_div4_item {
             width: 18%;
             height: 45%;
             margin-right: 2.5%;
             margin-top: 1px
         }
-
+        /*明星同款*/
         .body_dv5_item {
             width: 32%;
             height: 400px;
             margin-right: 2%
         }
-
+        /*时尚美妆*/
         .body_dv6_item {
             width: 32%;
             height: 400px;
             margin-right: 2%
         }
-
+        /*HI 范儿*/
         .body_dv7_item {
             width: 32%;
             height: 300px;
             margin-right: 2%
         }
-
+        /*好店推荐 店铺精选 品质保证*/
         .body_dv8_item {
             width: 32%;
             height: 400px;
             margin-right: 2%
         }
-
+        /*新店驾到*/
         .body_dv9_item {
             width: 18%;
             height: 45%;
             margin-right: 2.5%;
             margin-bottom: 1px;
         }
-
+        /*右侧工具栏*/
         #toolbar_right {
             z-index: 11;
             width: 40px;
@@ -246,7 +245,7 @@
             position: fixed;
             top: 50px;
         }
-
+        /*右侧工具栏按钮*/
         #toolbar_right button {
             width: 100%;
             height: 50%;
@@ -258,7 +257,7 @@
             background-color: #ff6699;
             color: #ffffff;
         }
-
+        /*右侧工具栏按钮  字体图标*/
         #toolbar_right button i {
             color: #ff6699;
         }
@@ -267,8 +266,9 @@
             color: #ffffff;
         }
 
+        /*右侧工具栏  返回顶部按钮*/
         #to_Top {
-            z-index: 9;
+            z-index: 99;
             padding-top: 5px;
             display: none;
             width: 40px;
@@ -281,6 +281,8 @@
             border: 1px solid #dddddd;
         }
 
+
+        /*右侧隐藏工具栏  光标覆盖效果*/
         #toolbar_right_hover {
             z-index: 10;
             width: 40px;
@@ -292,6 +294,7 @@
             border: 1px solid #dddddd;
         }
 
+        /*右侧隐藏工具栏  按钮效果*/
         #toolbar_right_hover button {
             width: 100%;
             background-color: transparent;
@@ -301,17 +304,19 @@
             color: #ff6699;
         }
 
+        /*右侧隐藏工具栏  按钮光标覆盖效果*/
         #toolbar_right_hover button:hover {
             background-color: #ff6699;
             color: #ffffff;
         }
 
+        /***好店推荐  效果***/
         #dv8_hover {
             background-color: black;
             opacity: 0.5;
             position: absolute;
         }
-
+        /***好店推荐  按钮***/
         #dv8_hover button {
             width: 100px;
             line-height: 40px;
@@ -321,7 +326,7 @@
             margin-left: 35%;
             margin-top: 50px;
         }
-
+        /***好店推荐  按钮光标覆盖效果***/
         #dv8_hover button:hover {
             width: 100px;
             line-height: 40px;
@@ -332,6 +337,7 @@
             margin-top: 50px;
         }
 
+        /***滚动广告  左侧导航延伸菜单***/
         .left_item_list {
             position: absolute;
             background-color: red;
@@ -1265,7 +1271,8 @@
 
             top3_beScrolling();
 
-            $("#body_dv1_left>div").css("border-right", "1px solid #cccccc");
+            //滚动光左侧导航 默认样式调整
+            $("#body_d1_left>div").css("border-right", "1px solid #cccccc");
 
             $("[role='left_item']").css("color", "#FF6699");
 
@@ -1359,9 +1366,9 @@
 
             });
 
+//            首页导航3 "更多"下拉菜单 光标覆盖
             $("#find_more").mouseover(function () {
                 $("#the_more").remove();
-
                 var more = "<div id='the_more' style='border: 1px solid #cccccc;border-top: 4px solid white'>";
                 more +="<div><a>内衣</a></div>";
                 more +="<div><a>美妆</a></div>";
@@ -1427,7 +1434,9 @@
 
         $("").ready(function () {
 
+//            页面初始化
             page_init();
+//            好店推荐
             dv8_hover();
 
         });
