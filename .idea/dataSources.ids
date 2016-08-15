@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - mls@localhost" uuid="e2b88970-b0df-4612-80fd-9d14e4c3e465">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="mls">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="awesome"/>
+      <schema id="3" name="crm"/>
+      <schema id="4" name="db"/>
+      <schema id="5" name="hibernate"/>
+      <schema id="6" name="information_schema"/>
+      <schema id="7" name="mysql"/>
+      <schema id="8" name="mytest"/>
+      <schema id="9" name="performance_schema"/>
+      <schema id="10" name="sakila"/>
+      <schema id="11" name="springdb"/>
+      <schema id="12" name="sys"/>
+      <schema id="13" name="test"/>
+      <schema id="14" name="usercenter"/>
+      <schema id="15" name="world"/>
+      <table id="16" parent="1" name="areainfo"/>
+      <table id="17" parent="1" name="clothing_closed"/>
+      <table id="18" parent="1" name="clothing_lineheight"/>
+      <table id="19" parent="1" name="clothing_size"/>
+      <table id="20" parent="1" name="clothing_trousers_houdu"/>
+      <table id="21" parent="1" name="clothing_trouserssize"/>
+      <table id="22" parent="1" name="typeinfo"/>
+      <table id="23" parent="1" name="userinfo"/>
+      <table id="24" parent="1" name="usertypeinfo"/>
+      <table id="25" parent="1" name="advertisement"/>
+      <table id="26" parent="1" name="clothing_collar"/>
+      <table id="27" parent="1" name="clothing_element"/>
+      <table id="28" parent="1" name="clothing_skirtbaixing"/>
+      <table id="29" parent="1" name="clothing_skirthoudu"/>
+      <table id="30" parent="1" name="clothing_skirtkaicha"/>
+      <table id="31" parent="1" name="clothing_skirtsize"/>
+      <table id="32" parent="1" name="clothing_typeversion"/>
+      <table id="33" parent="1" name="goodscollection"/>
+      <table id="34" parent="1" name="goodscomment"/>
+      <table id="35" parent="1" name="goodsimage"/>
+      <table id="36" parent="1" name="goodsinfo"/>
+      <table id="37" parent="1" name="goodsoftheme"/>
+      <table id="38" parent="1" name="goodsprice"/>
+      <table id="39" parent="1" name="goodspricehistory"/>
+      <table id="40" parent="1" name="goodssize"/>
+      <table id="41" parent="1" name="goodstag"/>
+      <table id="42" parent="1" name="keywordinfo"/>
+      <table id="43" parent="1" name="material"/>
+      <table id="44" parent="1" name="orderinfo"/>
+      <table id="45" parent="1" name="orderlist"/>
+      <table id="46" parent="1" name="package_structure"/>
+      <table id="47" parent="1" name="packagetype"/>
+      <table id="48" parent="1" name="rollingadvertisement"/>
+      <table id="49" parent="1" name="sole"/>
+      <table id="50" parent="1" name="specifications"/>
+      <table id="51" parent="1" name="storeinfo"/>
+      <table id="52" parent="1" name="theme"/>
+      <table id="53" parent="1" name="typeinfoandspecifications"/>
+      <column id="54" parent="16" name="aid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="55" parent="16" name="aname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="56" parent="16" name="alevel">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="57" parent="16" name="aparentid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="58" parent="16" name="PRIMARY">
+        <columns>aid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="59" parent="17" name="ccloseid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="60" parent="17" name="cctext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="61" parent="17" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="62" parent="17" name="PRIMARY">
+        <columns>ccloseid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="63" parent="18" name="clhid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="64" parent="18" name="clhtext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="65" parent="18" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="66" parent="18" name="PRIMARY">
+        <columns>clhid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="67" parent="19" name="csid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="68" parent="19" name="csname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="69" parent="19" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="70" parent="19" name="PRIMARY">
+        <columns>csid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="71" parent="20" name="cthid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="72" parent="20" name="cthtext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="73" parent="20" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="74" parent="20" name="PRIMARY">
+        <columns>cthid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="75" parent="21" name="ctsid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="76" parent="21" name="ctsname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="77" parent="21" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="78" parent="21" name="PRIMARY">
+        <columns>ctsid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="79" parent="22" name="tpid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="80" parent="22" name="tpname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="81" parent="22" name="tplevel">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="82" parent="22" name="tpparentid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="83" parent="22" name="PRIMARY">
+        <columns>tpid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="84" parent="23" name="ufid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="85" parent="23" name="uflogname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="86" parent="23" name="ufpassword">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="87" parent="23" name="ufsex">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="88" parent="23" name="ufbirthday">
+        <data-type>date|0</data-type>
+      </column>
+      <column id="89" parent="23" name="ufnum">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="90" parent="23" name="ufqq">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="91" parent="23" name="ufemail">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="92" parent="23" name="uflogdate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="93" parent="23" name="uflocked">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="94" parent="23" name="utid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="95" parent="23" name="uflogname">
+        <columns>uflogname</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="96" parent="23" name="uf_fk1">
+        <columns>utid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="97" parent="23" name="PRIMARY">
+        <columns>ufid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="98" parent="23" name="uflogname">
+        <columns>uflogname</columns>
+        <underlying-index>uflogname</underlying-index>
+      </key>
+      <foreign-key id="99" parent="23" name="uf_fk1">
+        <columns>utid</columns>
+        <ref-key>~.usertypeinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="100" parent="24" name="utid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="101" parent="24" name="utname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <index id="102" parent="24" name="utname">
+        <columns>utname</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="103" parent="24" name="PRIMARY">
+        <columns>utid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="104" parent="24" name="utname">
+        <columns>utname</columns>
+        <underlying-index>utname</underlying-index>
+      </key>
+      <column id="105" parent="25" name="adid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="106" parent="25" name="adimg">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="107" parent="25" name="adlink">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="108" parent="25" name="adindex">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="109" parent="25" name="adtype">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="110" parent="25" name="PRIMARY">
+        <columns>adid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="111" parent="26" name="ccid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="112" parent="26" name="cctext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="113" parent="26" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="114" parent="26" name="PRIMARY">
+        <columns>ccid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="115" parent="27" name="ceid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="116" parent="27" name="cetext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="117" parent="27" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="118" parent="27" name="PRIMARY">
+        <columns>ceid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="119" parent="28" name="csbid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="120" parent="28" name="csbtext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="121" parent="28" name="tpid">
+        <data-type>int(11)|0</data-type>
+        <default-expression>&apos;2&apos;</default-expression>
+      </column>
+      <key id="122" parent="28" name="PRIMARY">
+        <columns>csbid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="123" parent="29" name="cshid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="124" parent="29" name="cshtext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="125" parent="29" name="tpid">
+        <data-type>int(11)|0</data-type>
+        <default-expression>&apos;2&apos;</default-expression>
+      </column>
+      <key id="126" parent="29" name="PRIMARY">
+        <columns>cshid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="127" parent="30" name="cskid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="128" parent="30" name="csktext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="129" parent="30" name="tpid">
+        <data-type>int(11)|0</data-type>
+        <default-expression>&apos;2&apos;</default-expression>
+      </column>
+      <key id="130" parent="30" name="PRIMARY">
+        <columns>cskid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="131" parent="31" name="cssid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="132" parent="31" name="csstext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="133" parent="31" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="134" parent="31" name="PRIMARY">
+        <columns>cssid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="135" parent="32" name="ctid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="136" parent="32" name="cttext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="137" parent="32" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="138" parent="32" name="PRIMARY">
+        <columns>ctid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="139" parent="33" name="ufid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="140" parent="33" name="gdid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="141" parent="33" name="gdid">
+        <columns>gdid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="142" parent="33" name="PRIMARY">
+        <columns>ufid
+gdid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="143" parent="33" name="goodscollection_ibfk_1">
+        <columns>ufid</columns>
+        <ref-key>~.userinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="144" parent="33" name="goodscollection_ibfk_2">
+        <columns>gdid</columns>
+        <ref-key>~.goodsinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="145" parent="34" name="ufid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="146" parent="34" name="gdid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="147" parent="34" name="gcdate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="148" parent="34" name="gctext">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="149" parent="34" name="gctype">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="150" parent="34" name="gdid">
+        <columns>gdid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="151" parent="34" name="PRIMARY">
+        <columns>ufid
+gdid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="152" parent="34" name="goodscomment_ibfk_1">
+        <columns>ufid</columns>
+        <ref-key>~.userinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="153" parent="34" name="goodscomment_ibfk_2">
+        <columns>gdid</columns>
+        <ref-key>~.goodsinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="154" parent="35" name="gimgid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="155" parent="35" name="gimgurl">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="156" parent="35" name="gdid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="157" parent="35" name="gimgtype">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="158" parent="35" name="gdid">
+        <columns>gdid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="159" parent="35" name="PRIMARY">
+        <columns>gimgid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="160" parent="35" name="goodsimage_ibfk_1">
+        <columns>gdid</columns>
+        <ref-key>~.goodsinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="161" parent="36" name="gdid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="162" parent="36" name="gdname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="163" parent="36" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="164" parent="36" name="ctid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="165" parent="36" name="ccid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="166" parent="36" name="mtid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="167" parent="36" name="ceid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="168" parent="36" name="clhid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="169" parent="36" name="ccloseid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="170" parent="36" name="csid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="171" parent="36" name="cssid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="172" parent="36" name="cshid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="173" parent="36" name="csbid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="174" parent="36" name="cskid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="175" parent="36" name="ctsid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="176" parent="36" name="cthid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="177" parent="36" name="soleid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="178" parent="36" name="ptid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="179" parent="36" name="packagehardness">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="180" parent="36" name="packageinner">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="181" parent="36" name="pgstid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="182" parent="36" name="stid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="183" parent="36" name="tagid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="184" parent="36" name="gtkeywords">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="185" parent="36" name="gsid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="186" parent="36" name="gtdate">
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="187" parent="36" name="PRIMARY">
+        <columns>gdid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="188" parent="37" name="thid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="189" parent="37" name="gdid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="190" parent="37" name="tddate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="191" parent="37" name="PRIMARY">
+        <columns>thid
+gdid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="192" parent="38" name="gpid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="193" parent="38" name="gdid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="194" parent="38" name="utid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="195" parent="38" name="price">
+        <mandatory>1</mandatory>
+        <data-type>double|0</data-type>
+      </column>
+      <index id="196" parent="38" name="gdid">
+        <columns>gdid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="197" parent="38" name="PRIMARY">
+        <columns>gpid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="198" parent="38" name="goodsprice_ibfk_1">
+        <columns>gdid</columns>
+        <ref-key>~.goodsinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="199" parent="39" name="hid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="200" parent="39" name="gdid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="201" parent="39" name="utid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="202" parent="39" name="price_previous">
+        <mandatory>1</mandatory>
+        <data-type>double|0</data-type>
+      </column>
+      <column id="203" parent="39" name="changedate">
+        <data-type>datetime|0</data-type>
+      </column>
+      <index id="204" parent="39" name="gdid">
+        <columns>gdid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="205" parent="39" name="PRIMARY">
+        <columns>hid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="206" parent="39" name="goodspricehistory_ibfk_1">
+        <columns>gdid</columns>
+        <ref-key>~.goodsinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="207" parent="40" name="gsid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="208" parent="40" name="gstext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <key id="209" parent="40" name="PRIMARY">
+        <columns>gsid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="210" parent="41" name="tagid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="211" parent="41" name="tagname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="212" parent="41" name="tagimg">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <key id="213" parent="41" name="PRIMARY">
+        <columns>tagid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="214" parent="42" name="kwid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="215" parent="42" name="kwtext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <key id="216" parent="42" name="PRIMARY">
+        <columns>kwid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="217" parent="43" name="mtid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="218" parent="43" name="mttext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="219" parent="43" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="220" parent="43" name="PRIMARY">
+        <columns>mtid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="221" parent="44" name="ofid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="222" parent="44" name="ofuser">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="223" parent="44" name="ofdate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="224" parent="44" name="stid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="225" parent="44" name="ofstate">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="226" parent="44" name="address">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="227" parent="44" name="recipient">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="228" parent="44" name="contactnumber">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <index id="229" parent="44" name="ofuser">
+        <columns>ofuser</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="230" parent="44" name="stid">
+        <columns>stid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="231" parent="44" name="PRIMARY">
+        <columns>ofid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="232" parent="44" name="orderinfo_ibfk_1">
+        <columns>ofuser</columns>
+        <ref-key>~.userinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="233" parent="44" name="orderinfo_ibfk_2">
+        <columns>stid</columns>
+        <ref-key>~.storeinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="234" parent="45" name="olid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <column id="235" parent="45" name="gdid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="236" parent="45" name="gdcount">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="237" parent="45" name="price">
+        <data-type>double|0</data-type>
+      </column>
+      <column id="238" parent="45" name="ofid">
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <index id="239" parent="45" name="ofid">
+        <columns>ofid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="240" parent="45" name="PRIMARY">
+        <columns>olid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="241" parent="45" name="orderlist_ibfk_1">
+        <columns>ofid</columns>
+        <ref-key>~.orderinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="242" parent="46" name="pgstid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="243" parent="46" name="pgsttext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="244" parent="46" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="245" parent="46" name="pgsttext">
+        <columns>pgsttext</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="246" parent="46" name="PRIMARY">
+        <columns>pgstid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="247" parent="46" name="pgsttext">
+        <columns>pgsttext</columns>
+        <underlying-index>pgsttext</underlying-index>
+      </key>
+      <column id="248" parent="47" name="ptid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="249" parent="47" name="pttext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="250" parent="47" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="251" parent="47" name="pttext">
+        <columns>pttext</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="252" parent="47" name="PRIMARY">
+        <columns>ptid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="253" parent="47" name="pttext">
+        <columns>pttext</columns>
+        <underlying-index>pttext</underlying-index>
+      </key>
+      <column id="254" parent="48" name="raid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="255" parent="48" name="raimg">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="256" parent="48" name="raurl">
+        <mandatory>1</mandatory>
+        <data-type>varchar(300)|0</data-type>
+      </column>
+      <column id="257" parent="48" name="radate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="258" parent="48" name="PRIMARY">
+        <columns>raid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="259" parent="49" name="soleid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="260" parent="49" name="soletext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="261" parent="49" name="tpid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <index id="262" parent="49" name="soletext">
+        <columns>soletext</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="263" parent="49" name="PRIMARY">
+        <columns>soleid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="264" parent="49" name="soletext">
+        <columns>soletext</columns>
+        <underlying-index>soletext</underlying-index>
+      </key>
+      <column id="265" parent="50" name="spid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="266" parent="50" name="sptext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <index id="267" parent="50" name="sptext">
+        <columns>sptext</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="268" parent="50" name="PRIMARY">
+        <columns>spid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="269" parent="50" name="sptext">
+        <columns>sptext</columns>
+        <underlying-index>sptext</underlying-index>
+      </key>
+      <column id="270" parent="51" name="stid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="271" parent="51" name="stname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="272" parent="51" name="stnum">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="273" parent="51" name="stqq">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="274" parent="51" name="staddress">
+        <data-type>varchar(200)|0</data-type>
+      </column>
+      <column id="275" parent="51" name="stareaid">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="276" parent="51" name="PRIMARY">
+        <columns>stid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="277" parent="52" name="thid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="278" parent="52" name="thtext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <key id="279" parent="52" name="PRIMARY">
+        <columns>thid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="280" parent="53" name="tpid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="281" parent="53" name="spid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="282" parent="53" name="sptext">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)|0</data-type>
+      </column>
+      <index id="283" parent="53" name="spid">
+        <columns>spid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="284" parent="53" name="PRIMARY">
+        <columns>tpid
+spid</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="285" parent="53" name="typeinfoandspecifications_ibfk_1">
+        <columns>tpid</columns>
+        <ref-key>~.typeinfo.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="286" parent="53" name="typeinfoandspecifications_ibfk_2">
+        <columns>spid</columns>
+        <ref-key>~.specifications.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>
